@@ -70,10 +70,10 @@ clamp_euclidean(a::VecE, lo::Real, hi::Real) = clamp.(a, lo, hi)
 "Normalize the euclidean part of the vector while leaving the orientation part unchanged."
 normalize_euclidian(a::VecE, p::Real=2) = normalize(a, p)
 
-include("common.jl")
 include("vecE2.jl")
 include("vecE3.jl")
 include("vecSE2.jl")
+include("common.jl")
 
 include("geom/geom.jl")
 include("coordinate_transforms.jl")
